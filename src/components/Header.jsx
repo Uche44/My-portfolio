@@ -14,7 +14,7 @@ const Links = ['Home', 'About', 'Projects', 'Contact']
       <nav className="w-full h-full border-white flex justify-between items-center px-3 bg-black">
         <div className="h-8 w-8 text-white font-bold">PA</div>
         <button
-          className={`text-white cursor-pointer bg-gray-700 rounded-[10px] border-gray-200 h-10 w-10 justify-self-end md:hidden ${
+          className={`text-white cursor-pointer bg-[#23312e] rounded-[10px] border-gray-200 h-10 w-10 justify-self-end md:hidden ${
             openNav ? "hidden" : "block"
           } `}
           onClick={() => setOpenNav(!openNav)}

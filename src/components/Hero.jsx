@@ -1,7 +1,7 @@
 const HeroSection = () => {
   return (
     <section className="hero h-[87vh] w-full  flex flex-col items-center md:h-[90vh] relative ">
-      <div className="status border-white w-18 h-fit items-center gap-1 flex absolute left-[1rem] top-[2rem]">
+      <div className="status border-white w-18 h-fit items-center gap-1 flex absolute left-[1rem] top-[1.5rem]">
         <img
           src="images/me.jpg"
           className="w-10 h-10 rounded-full"
@@ -9,7 +9,7 @@ const HeroSection = () => {
         />
         <div className="w-3 h-3 bg-green-600 rounded-full animate-pulse"></div>
       </div>
-      <h1 className="text-[3rem] font-semibold mt-28 text-center text-white">
+      <h1 className="text-[2.6rem] font-semibold mt-16 text-center text-white">
         Crafting Memorable User Experiences for Business Success
       </h1>
       <p className="text-[0.8rem] text-center mt-2 text-white">

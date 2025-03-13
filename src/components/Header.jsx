@@ -5,8 +5,7 @@ import { FaHamburger, FaTimes } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-
-const Links = ['Home', 'About', 'Projects', 'Contact']
+  const Links = ["Home", "About", "Projects", "Contact"];
 
   const [openNav, setOpenNav] = useState(false);
   return (
@@ -23,8 +22,7 @@ const Links = ['Home', 'About', 'Projects', 'Contact']
         </button>
         {/* nav for large screen */}
         <div className="large md:flex hidden gap-4 text-white h-[30px] w-[40%]">
-        
-          {Links.map((link, index)=>(
+          {Links.map((link, index) => (
             <NavLink key={index}>{link}</NavLink>
           ))}
         </div>
@@ -41,11 +39,9 @@ const Links = ['Home', 'About', 'Projects', 'Contact']
           <FaTimes className={` ${openNav ? "block" : "hidden"} `} />
         </button>
 
-
- {Links.map((link, index)=>(
-            <NavLink key={index}>{link}</NavLink>
-          ))}
-       
+        {Links.map((link, index) => (
+          <NavLink key={index}>{link}</NavLink>
+        ))}
       </div>
     </header>
   );

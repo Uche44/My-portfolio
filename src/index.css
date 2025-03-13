@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 @import "tailwindcss";
 
-
-body{
+body {
   font-family: JetBrains Mono;
 }
 
@@ -27,14 +26,16 @@ body{
   transition: width 2s ease-out;
 }
 
-.bg-hero {
+/* .bg-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("images/me.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
-.overlay{
+.overlay {
   background: rgba(0, 0, 0, 0.9);
 }
+
+

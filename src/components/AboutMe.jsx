@@ -1,5 +1,5 @@
-// import { HtmlIcon } from "./ToolIcons";
-
+// import AliceCarousel from "react-alice-carousel";
+import { Gallery } from "./Tools";
 const AboutMe = () => {
   const Tools = [
     { id: 1, name: "HTML", img: "images/html.png" },
@@ -18,22 +18,22 @@ const AboutMe = () => {
   return (
     <section className="w-full h-fit flex flex-col items-center pb-4">
       <h2 className="text-white text-[2rem] mb-4">About Me</h2>
-      <div className="w-[90%] px-4 py-5 rounded-[15px] bg-[#131b1a]">
+      <div className="w-[90%] px-4 py-5 rounded-[15px]  bg-gradient-to-r from-[#131b1a] via-black to-[#131b1a] animate-gradient">
         <p className="text-white">
           Hi! I'm Perpetual Asogwa, a passionate Frontend developer who turns
-          ideas into interactive, user-friendly experiences. With React,
-          JavaScript, and modern UI frameworks, I build sleek, responsive web
-          applications that blend aesthetics with functionality. I&apos;m always
-          exploring new technologies, optimizing performance, and pushing the
-          boundaries of web development. Hit me up and let&apos;s create
-          something amazing!
+          ideas into interactive, user-friendly experiences. I blend exquisite
+          design with impeccable functionality for an exceptional user
+          experience. Hit me up and let&apos;s
+          create something amazing!
         </p>
       </div>
 
       <h2 className="text-white text-[2rem] m-4">Tools I Use</h2>
 
-      <div className="container w-full h-[16rem]">
-        <div className="first-row h-1/2 w-full flex gap-2 ">
+      <div className="container min-w-full h-[10rem] mb-8">
+        <Gallery />
+
+        {/* <div className="first-row h-1/2 w-full flex gap-2">
           {Tools.map((tool, id) => (
             <div className="flex flex-col items-center w-1/3 h-full border-2 border-[#23312e] p-2 bg-[#131b1a] rounded-[1rem]">
               <img
@@ -56,7 +56,7 @@ const AboutMe = () => {
               <p className="text-white -mt-2">{tool.name}</p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

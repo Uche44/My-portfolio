@@ -7,19 +7,23 @@ const HeroSection = () => {
           className="w-10 h-10 rounded-full"
           alt=""
         />
+        {/* blink light divs */}
         <div className="grid place-content-center h-3 w-3 rounded-full bg-green-600 animate-pulse">
           <div className="w-2 h-2 bg-green-600 rounded-full animate-ping"></div>
         </div>
       </div>
-      <h1 className="text-[2.6rem] font-semibold mt-10 text-center text-white">
+      <h1 className="text-[2.6rem] font-semibold mt-14 text-center text-white">
         Crafting Memorable User Experiences for your Web Apps
       </h1>
-      <p className="text-[0.8rem] text-center mt-3 text-white">
+      {/* <p className="text-[0.8rem] text-center mt-3 text-white">
         I blend exquisite design with impeccable functionality for an
         exceptional user experience, while keeping users captivated
-      </p>
-      <button className="bg-blue-700 h-12 w-28 cursor-pointer rounded-xl border-none outline-none mt-6 text-white font-semibold hover:brightness-125">
-        HIRE ME
+      </p> */}
+      {/* <button className="bg-blue-700 h-12 w-28 cursor-pointer rounded-xl border-none outline-none mt-10 text-white font-semibold hover:brightness-125">
+        LET'S TALK
+      </button> */}
+      <button className="h-12 w-28 cursor-pointer rounded-xl border-none outline-none mt-10 text-white font-semibold hover:brightness-125 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient">
+        LET'S TALK
       </button>
     </section>
   );

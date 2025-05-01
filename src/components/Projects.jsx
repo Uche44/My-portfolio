@@ -5,7 +5,7 @@ const Projects = () => {
       name: "AI Document Analyser UI",
       tools: ["Nextjs", "Tailwindcss", "Typescript"],
       about: "A User Interface for an AI Document Analyser",
-      url: " ai-chat-ui-lemon.vercel.app ",
+      url: "https://ai-chat-ui-lemon.vercel.app",
     },
     {
       img: "/images/cardify.png",
@@ -13,7 +13,7 @@ const Projects = () => {
       tools: ["React", "Tailwindcss"],
       about:
         "A card generator site that allows users create iD cards, business cards using available templates",
-      url: "cardify-theta.vercel.app",
+      url: "https://cardify-theta.vercel.app",
     },
     {
       img: "/images/color-guessing-game.png",
@@ -21,14 +21,14 @@ const Projects = () => {
       tools: ["React", "CSS"],
       about:
         "A fun game that requires you to guess a preselected color from a list of colors",
-      url: "color-guessing-game-jade.vercel.app",
+      url: "https://color-guessing-game-jade.vercel.app",
     },
     {
       img: "/images/animal-fact-app.png",
       name: "Animal Fact App",
       tools: ["React", "Tailwindcss", "API"],
       about: "A fun app that provides random facts about animals",
-      url: " animal-fact-app.vercel.app ",
+      url: "https://animal-fact-app.vercel.app",
     },
   ];
 
@@ -57,6 +57,7 @@ const Projects = () => {
 
           <a
             href={project.url}
+            target="_blank"
             className="bg-gray-400 p-1 rounded-[5px] border-none outline-none mb-2 mt-2 ml-[15rem]"
           >
             view live

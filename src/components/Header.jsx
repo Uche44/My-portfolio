@@ -23,7 +23,13 @@ const Header = () => {
         {/* nav for large screen */}
         <div className="large md:flex hidden gap-4 text-white h-[30px] w-[40%]">
           {Links.map((link, index) => (
-            <NavLink key={index}>{link}</NavLink>
+            <a
+              key={index}
+              href={`#${link.toLowerCase()}`}
+              className="hover:underline"
+            >
+              {link}
+            </a>
           ))}
         </div>
       </nav>
@@ -40,7 +46,16 @@ const Header = () => {
         </button>
 
         {Links.map((link, index) => (
-          <NavLink key={index}>{link}</NavLink>
+          <a
+            key={index}
+            href={`#${link.toLowerCase()}`}
+            onClick={() => setOpenNav(!openNav)}
+            className="hover:cursor-pointer"
+            smooth={true}
+            duration={500}
+          >
+            {link}
+          </a>
         ))}
       </div>
     </header>

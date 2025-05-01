@@ -1,4 +1,7 @@
-// import AliceCarousel from "react-alice-carousel";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+
 import { Gallery } from "./Tools";
 const AboutMe = () => {
   const Tools = [
@@ -16,15 +19,40 @@ const AboutMe = () => {
   ];
 
   return (
-    <section className="w-full h-fit flex flex-col items-center pb-4">
+    <section
+      id="about"
+      className="w-full h-fit flex flex-col items-center pb-4 scroll-m-8"
+    >
       <h2 className="text-white text-[2rem] mb-4">About Me</h2>
       <div className="w-[90%] px-4 py-5 rounded-[15px]  bg-gradient-to-r from-[#131b1a] via-black to-[#131b1a] animate-gradient">
         <p className="text-white">
           Hi! I'm Perpetual Asogwa, a passionate Frontend developer who turns
-          ideas into interactive, user-friendly experiences. I blend exquisite
-          design with impeccable functionality for an exceptional user
-          experience. Hit me up and let&apos;s
-          create something amazing!
+          ideas into interactive, user-friendly experiences.{" "}
+          <div className="w-full h-[3rem] flex justify-between items-center mt-3">
+            <a
+              href="https://github.com/Uche44"
+              className=""
+              target="_blank"
+            >
+              <FaGithub className="text-[3rem]" />
+            </a>
+
+            <a
+              href="https://x.com/perpetualuchec5"
+              className=""
+              target="_blank"
+            >
+              <FaTwitter className="text-[3rem]" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/perpetual-uchechukwu-798b51262/"
+              className=""
+              target="_blank"
+            >
+              <FaLinkedin className="text-[3rem]" />
+            </a>
+          </div>
         </p>
       </div>
 
@@ -32,31 +60,6 @@ const AboutMe = () => {
 
       <div className="container min-w-full h-[10rem] mb-8">
         <Gallery />
-
-        {/* <div className="first-row h-1/2 w-full flex gap-2">
-          {Tools.map((tool, id) => (
-            <div className="flex flex-col items-center w-1/3 h-full border-2 border-[#23312e] p-2 bg-[#131b1a] rounded-[1rem]">
-              <img
-                key={id}
-                src={tool.img}
-                className="h-[6rem] w-full"
-              />
-              <p className="text-white -mt-2">{tool.name}</p>
-            </div>
-          ))}
-        </div>
-        <div className="second-row flex h-1/2 w-full mt-2 gap-2">
-          {Tools2.map((tool, id) => (
-            <div className="flex flex-col items-center w-1/3 h-full border-2  border-[#23312e] p-2 bg-[#131b1a] rounded-[1rem]">
-              <img
-                key={id}
-                src={tool.img}
-                className="h-[6rem] w-full"
-              />
-              <p className="text-white -mt-2">{tool.name}</p>
-            </div>
-          ))}
-        </div> */}
       </div>
     </section>
   );

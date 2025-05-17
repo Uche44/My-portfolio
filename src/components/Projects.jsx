@@ -7,14 +7,14 @@ const Projects = () => {
       about: "A User Interface for an AI Document Analyser",
       url: "https://ai-chat-ui-lemon.vercel.app",
     },
-    {
-      img: "/images/cardify.png",
-      name: "Cardify",
-      tools: ["React", "Tailwindcss"],
-      about:
-        "A card generator site that allows users create iD cards, business cards using available templates",
-      url: "https://cardify-theta.vercel.app",
-    },
+    // {
+    //   img: "/images/cardify.png",
+    //   name: "Cardify",
+    //   tools: ["React", "Tailwindcss"],
+    //   about:
+    //     "A card generator site that allows users create iD cards, business cards using available templates",
+    //   url: "https://cardify-theta.vercel.app",
+    // },
     {
       img: "/images/color-guessing-game.png",
       name: "Color Guessing Game",

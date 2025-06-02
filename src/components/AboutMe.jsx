@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 
-import { Gallery } from "./Tools";
+// import { Gallery } from "./Tools";
 const AboutMe = () => {
   const Tools = [
     { id: 1, name: "HTML", img: "images/html.png" },

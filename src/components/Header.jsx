@@ -9,9 +9,9 @@ const Header = () => {
 
   const [openNav, setOpenNav] = useState(false);
   return (
-    <header className="w-full h-18 bg-white">
-      <nav className="w-full h-full border-white flex justify-between items-center px-3 bg-black">
-        <div className="h-8 w-8 text-white font-bold">PA</div>
+    <header className="w-full h-18 bg-white ">
+      <nav className="w-full h-full border-white border-2 flex justify-between items-center px-3 bg-black">
+        <div className="h-8 w-8 text-white font-bold md:text-[1.4rem]">PA</div>
         <button
           className={`text-white cursor-pointer bg-[#23312e] rounded-[10px] border-gray-200 h-10 w-10 justify-self-end md:hidden ${
             openNav ? "hidden" : "block"
@@ -21,15 +21,16 @@ const Header = () => {
           ☰
         </button>
         {/* nav for large screen */}
-        <div className="large md:flex hidden gap-4 text-white h-[30px] w-[40%]">
+        <div className="large md:flex border-white border-2 hidden gap-4 text-white text-[1.3rem] h-[30px] w-[30%] md:justify-between">
           {Links.map((link, index) => (
-            <a
+            <NavLink
+              to={`${link.toLowerCase()}`}
               key={index}
-              href={`#${link.toLowerCase()}`}
+            
               className="hover:underline"
             >
               {link}
-            </a>
+            </NavLink>
           ))}
         </div>
       </nav>
@@ -46,16 +47,16 @@ const Header = () => {
         </button>
 
         {Links.map((link, index) => (
-          <a
+          <NavLink
             key={index}
-            href={`#${link.toLowerCase()}`}
+            to={`${link.toLowerCase()}`}
             onClick={() => setOpenNav(!openNav)}
             className="hover:cursor-pointer"
             smooth={true}
             duration={500}
           >
             {link}
-          </a>
+          </NavLink>
         ))}
       </div>
     </header>

@@ -2,28 +2,29 @@ import { GitHubLight } from "developer-icons";
 
 const Projects = () => {
   const projects = [
-    {
-      img: "/images/color-guessing-game.png",
-      name: "SabiMyRights",
-      tools: ["React", "JavaScript", "TailwindCSS", "Firebase"],
-      about:
-        "A fun game that requires you to guess a preselected color from a list of colors",
-      url: "https://id-generator-chi.vercel.app/",
-      github: "https://github.com/Uche44/sabi-rights",
-    },
+    // {
+    //   img: "/images/color-guessing-game.png",
+    //   name: "SabiMyRights",
+    //   tools: ["React", "JavaScript", "TailwindCSS", "Firebase"],
+    //   about:
+    //     "A fun game that requires you to guess a preselected color from a list of colors",
+    //   url: "https://id-generator-chi.vercel.app/",
+    //   github: "https://github.com/Uche44/sabi-rights",
+    // },
     {
       img: "/images/aichat.png",
       name: "AI Document Analyser UI",
       tools: ["Nextjs", "Tailwindcss", "Typescript"],
-      about: "A User Interface for an AI Document Analyser",
+      about: "A User Interface for an AI powered Document Analyser application",
       url: "https://ai-chat-ui-lemon.vercel.app",
+      github: "https://github.com/Uche44/ai-chat-ui",
     },
     {
       img: "/images/cardify.png",
       name: "Interactive Cart",
       tools: ["React", "Tailwindcss"],
       about:
-        "A card generator site that allows users create iD cards, business cards using available templates",
+        "An Food delivery cart that allows users to add, remove, update items and checkout in their cart",
       url: "https://interactive-cart-lilac.vercel.app/",
       github: "https://github.com/Uche44/interactive-cart",
     },
@@ -32,7 +33,7 @@ const Projects = () => {
       name: "ID Card Generator",
       tools: ["React", "CSS", "Html-2-canvas", "jspdf"],
       about:
-        "A fun game that requires you to guess a preselected color from a list of colors",
+        "An ID card generator that allows users to create and download ID cards with custom information",
       url: "https://id-generator-chi.vercel.app/",
       github: "https://github.com/Uche44/ID-generator",
     },
@@ -42,6 +43,7 @@ const Projects = () => {
       tools: ["React", "Tailwindcss", "API"],
       about: "A fun app that provides random facts about animals",
       url: "https://animal-fact-app.vercel.app",
+      github: "https://github.com/Uche44/Animal-Fact-App",
     },
   ];
 

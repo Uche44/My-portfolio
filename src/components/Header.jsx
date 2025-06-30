@@ -10,7 +10,7 @@ const Header = () => {
   const [openNav, setOpenNav] = useState(false);
   return (
     <header className="w-full h-18 md:h-20 bg-white ">
-      <nav className="w-full h-full border-white border-2 flex justify-between items-center px-3 bg-black">
+      <nav className="w-full h-full flex justify-between items-center px-3 bg-black">
         <div className="h-8 w-8 text-white font-bold md:text-[1.6rem]">PA</div>
         <button
           className={`text-white cursor-pointer bg-[#23312e] rounded-[10px] border-gray-200 h-10 w-10 justify-self-end md:hidden ${
@@ -21,7 +21,7 @@ const Header = () => {
           ☰
         </button>
         {/* nav for large screen */}
-        <div className="large md:flex border-white border-2 md:items-center hidden gap-4 text-white text-[1.3rem] h-[50px] w-[30%] md:justify-between">
+        <div className="large md:flex md:items-center hidden gap-4 text-white text-[1.3rem] h-[50px] w-[30%] md:justify-between">
           {Links.map((link, index) => (
             <NavLink
               to={`${link.toLowerCase()}`}

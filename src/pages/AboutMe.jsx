@@ -40,7 +40,7 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="w-full h-fit flex flex-col items-center py-8 bg-black"
+      className="w-full min-h-screen flex flex-col items-center py-8 bg-black"
     >
       <h2 className="text-gray-600 text-[2.5rem] font-bold">Hello!</h2>
 
@@ -51,7 +51,7 @@ const AboutMe = () => {
       /> */}
 
       <div className="w-[90%] px-4 py-5 rounded-[15px]  ">
-        <p className="text-white">
+        <p className="text-white text-center text-[1.2rem] md:w-[60%] mx-auto">
           I'm <span className=" font-bold text-gray-600">Perpetual Asogwa</span>
           . A results-driven frontend developer specializing in building fast,
           responsive, and accessible web applications that help businesses grow
@@ -63,9 +63,9 @@ const AboutMe = () => {
           convert better.
         </p>
       </div>
-      <p className="text-white font-bold">Check me out at:</p>
+      <p className="text-white font-bold text-2xl">Check me out at:</p>
 
-      <div className="w-full h-[3rem] flex justify-around items-center mt-6 px-8">
+      <div className="w-full h-[3rem] flex justify-around items-center mt-6 px-8 md:w-[50%]">
         {socialLinks.map(({ icon: Icon, url }, i) => (
           <a
             href={url}
@@ -78,15 +78,15 @@ const AboutMe = () => {
       </div>
 
       <h2 className="text-white text-[2rem] m-4 font-">SkillSet</h2>
-      <h3 className="text-center text-white font-bold">Languages</h3>
+      <h3 className="text-center text-white font-bold text-3xl">Languages</h3>
       <div className="container w-full h-[10rem] mb-8">
-        <div className="w-full h-fit flex flex-col gap-4 px-4 py-6 rounded-[15px]">
+        <div className="w-full h-fit flex flex-col gap-4 px-4 py-6 rounded-[15px] md:grid md:grid-cols-2 md:gap-6 md:px-20">
           {Tools.map((tool) => {
             const Icon = tool.icon;
             return (
               <div
                 key={tool.id}
-                className="w-full h-[4rem] flex justify-between items-center bg-gray-600 rounded-[10px] px-4 hover:bg-gray-500 transition-all duration-300"
+                className="w-full h-[4rem] flex justify-between items-center bg-gray-600 rounded-[10px] px-4 hover:bg-gray-500 transition-all duration-300 md:hover:scale-105 md:h-[5.3rem] md:px-6"
               >
                 <Icon className="h-[3rem] text-white" />
                 <span className="text-white text-[1.2rem]">{tool.name}</span>
@@ -95,14 +95,16 @@ const AboutMe = () => {
           })}
         </div>
 
-        <h3 className="text-center text-white font-bold">Tools & Platforms</h3>
-        <div className="w-full h-fit flex flex-col gap-4 px-4 py-6 rounded-[15px]">
+        <h3 className="text-center text-white font-bold text-3xl">
+          Tools & Platforms
+        </h3>
+        <div className="w-full h-fit flex flex-col gap-4 px-4 py-6 rounded-[15px] md:grid md:grid-cols-2 md:gap-6 md:px-20">
           {Tools2.map((tool) => {
             const Icon = tool.icon;
             return (
               <div
                 key={tool.id}
-                className="w-full h-[4rem] flex justify-between items-center bg-gray-600 rounded-[10px] px-4 hover:bg-gray-500 transition-all duration-300"
+                className="w-full h-[4rem] flex justify-between items-center bg-gray-600 rounded-[10px] px-4 hover:bg-gray-500 transition-all duration-300 md:h-[5.3rem] md:px-6"
               >
                 <Icon className="h-[3rem] text-white" />
                 <span className="text-white text-[1.2rem]">{tool.name}</span>

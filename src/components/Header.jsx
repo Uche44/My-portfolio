@@ -9,8 +9,8 @@ const Header = () => {
 
   const [openNav, setOpenNav] = useState(false);
   return (
-    <header className="w-full h-18 md:h-20 bg-white ">
-      <nav className="w-full h-full flex justify-between items-center px-3 bg-black">
+    <header className="w-full h-20 shadow-2xl md:h-20 bg-white ">
+      <nav className="w-full h-full flex justify-between items-center px-3 md:px-8 bg-black">
         <div className="h-8 w-8 text-white font-bold md:text-[1.6rem]">PA</div>
         <button
           className={`text-white cursor-pointer bg-[#23312e] rounded-[10px] border-gray-200 h-10 w-10 justify-self-end md:hidden ${

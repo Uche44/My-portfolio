@@ -10,6 +10,7 @@ import {
   Supabase,
   LinkedIn,
   XLight,
+  TypeScript,
 } from "developer-icons";
 
 const AboutMe = () => {
@@ -19,6 +20,7 @@ const AboutMe = () => {
     { id: 3, name: "JavaScript", icon: JavaScript },
     { id: 4, name: "Tailwind CSS", icon: TailwindCSS },
     { id: 5, name: "React", icon: React },
+    { id: 6, name: "TypeScript", icon: TypeScript },
   ];
 
   const Tools2 = [

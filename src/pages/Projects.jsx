@@ -12,6 +12,15 @@ const Projects = () => {
     //   github: "https://github.com/Uche44/sabi-rights",
     // },
     {
+      img: "/images/too-doo.png",
+      name: "Task Management App",
+      tools: ["React", "Typescript", "TailwindCSS", "IndexedDb"],
+      about:
+        "A task management app with offline storage, helping you organize tasks and stay productive anytime.",
+      url: "https://too-doo-rouge.vercel.app/",
+      github: "https://github.com/Uche44/TooDoo",
+    },
+    {
       img: "/images/aichat.png",
       name: "AI Document Analyser UI",
       tools: ["Nextjs", "Tailwindcss", "Typescript"],
@@ -49,7 +58,6 @@ const Projects = () => {
 
   return (
     <>
-
       <h2 className="text-gray-600 text-[2.5rem] font-bold text-center mt-8 mb-4">
         My Projects
       </h2>
